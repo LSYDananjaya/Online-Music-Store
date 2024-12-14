@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="6.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd ">
+  <display-name>OnlineMusicStore</display-name>
+ 	 <servlet>
+	    <servlet-name>LoginServlet</servlet-name>
+	    <servlet-class>com.controllers.LoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	    <servlet-name>LoginServlet</servlet-name>
+	    <url-pattern>/LoginServlet</url-pattern>
+	</servlet-mapping>
+  
+  	 <servlet>
+	    <servlet-name>SignupServlet</servlet-name>
+	    <servlet-class>com.controllers.SignupServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	    <servlet-name>SignupServlet</servlet-name>
+	    <url-pattern>/SignupServlet</url-pattern>
+	</servlet-mapping>
+	
+	 
+	 <servlet>
+	    <servlet-name>CreatePackageServlet</servlet-name>
+	    <servlet-class>com.controllers.CreatePackageServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	    <servlet-name>CreatePackageServlet</servlet-name>
+	    <url-pattern>/createPackage</url-pattern>
+	</servlet-mapping>
+	
+  
+   <servlet>
+	    <servlet-name>GetPackagesServlet</servlet-name>
+	    <servlet-class>com.controllers.GetPackagesServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	    <servlet-name>GetPackagesServlet</servlet-name>
+	    <url-pattern>/getPackages</url-pattern>
+	</servlet-mapping>
+    
+    <servlet>
+	    <servlet-name>ProfileServlet</servlet-name>
+	    <servlet-class>com.controllers.ProfileServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	    <servlet-name>ProfileServlet</servlet-name>
+	    <url-pattern>/profile</url-pattern>
+	</servlet-mapping>
+    
+     
+    <servlet>
+	    <servlet-name>FeedbackServlet</servlet-name>
+	    <servlet-class>com.controllers.FeedbackServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	    <servlet-name>FeedbackServlet</servlet-name>
+	    <url-pattern>/feedbacks</url-pattern>
+	</servlet-mapping>
+     
+      <servlet>
+	    <servlet-name>BookingServlet</servlet-name>
+	    <servlet-class>com.controllers.BookingServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	    <servlet-name>BookingServlet</servlet-name>
+	    <url-pattern>/bookings</url-pattern>
+	</servlet-mapping>
+     
+     
+	<jsp-config>
+        <taglib>
+            <taglib-uri>http://java.sun.com/jsp/jstl/core</taglib-uri>
+            <taglib-location>/WEB-INF/lib/c-1.2.1.jar</taglib-location>
+        </taglib>
+    </jsp-config>
+</web-app>
